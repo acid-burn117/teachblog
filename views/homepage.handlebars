@@ -1,0 +1,7 @@
+{{#each posts as |post| }}
+    <a class="post-link" href="/posts/{{post.id}}">
+      <div class="card">
+        <h2 class="homepage-card">{{post.title}}<div class="small-txt">by {{user.name}} at {{post.createdAt}}</div></h2>
+      </div>
+    </a>
+{{/each}}
